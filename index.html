@@ -1,0 +1,1246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antique Woods | Premium Custom Furniture Manufacturer in Aligarh</title>
+    <meta name="description" content="Antique Woods is a trusted furniture manufacturer in Aligarh specializing in custom-made wooden furniture.">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Antique Woods | Premium Furniture">
+    <meta property="og:description" content="Crafting Timeless Wooden Furniture in Aligarh.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1618220179428-22790b46a011?auto=format&fit=crop&w=1200&q=80">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        /* CSS Variables */
+        :root {
+            --walnut-dark: #2C1E16;
+            --walnut-medium: #4A3324;
+            --gold: #C5A059;
+            --gold-hover: #D4AF37;
+            --beige: #F5F5DC;
+            --cream: #FFFDD0;
+            --white: #FFFFFF;
+            --text-dark: #333333;
+            --text-light: #777777;
+            --transition: all 0.3s ease;
+        }
+
+        /* Global Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--text-dark);
+            background-color: var(--beige);
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+            color: var(--walnut-dark);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            font-weight: 500;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: var(--transition);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+        }
+
+        .btn-primary {
+            background-color: var(--gold);
+            color: var(--white);
+            border: 1px solid var(--gold);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--walnut-dark);
+            border-color: var(--walnut-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--white);
+            border: 1px solid var(--white);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--white);
+            color: var(--walnut-dark);
+        }
+
+        /* Section Settings */
+        section {
+            padding: 100px 5%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .section-title p {
+            color: var(--text-light);
+            font-size: 1.1rem;
+        }
+
+        /* Header / Navbar */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            transition: var(--transition);
+        }
+
+        header.scrolled {
+            background-color: rgba(44, 30, 22, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 15px 5%;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--white);
+            display: flex;
+            flex-direction: column;
+            line-height: 1.2;
+        }
+
+        .logo span {
+            font-size: 0.8rem;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 300;
+            color: var(--gold);
+            letter-spacing: 2px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        .nav-links li a {
+            color: var(--white);
+            font-weight: 400;
+            font-size: 1rem;
+            position: relative;
+            transition: var(--transition);
+        }
+
+        .nav-links li a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--gold);
+            transition: var(--transition);
+        }
+
+        .nav-links li a:hover::after {
+            width: 100%;
+        }
+
+        .menu-toggle {
+            display: none;
+            color: var(--white);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(44, 30, 22, 0.7), rgba(44, 30, 22, 0.7)), url('https://images.unsplash.com/photo-1618220179428-22790b46a011?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            padding-top: 80px;
+        }
+
+        .hero-content {
+            color: var(--white);
+            max-width: 800px;
+        }
+
+        .hero-content h1 {
+            font-size: 4rem;
+            color: var(--white);
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            color: var(--beige);
+            font-weight: 300;
+        }
+
+        .hero-btns {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-bottom: 50px;
+        }
+
+        .trust-badges {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(5px);
+            padding: 10px 20px;
+            border-radius: 50px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .badge i {
+            color: var(--gold);
+        }
+
+        /* About Section */
+        .about {
+            background-color: var(--white);
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .about-img {
+            flex: 1;
+            position: relative;
+        }
+
+        .about-img img {
+            border-radius: 10px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+
+        .about-content {
+            flex: 1;
+        }
+
+        .about-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .about-content p {
+            color: var(--text-light);
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        .highlights {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .highlights li {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 500;
+        }
+
+        .highlights li i {
+            color: var(--gold);
+        }
+
+        /* Collection Section */
+        .collection {
+            background-color: var(--beige);
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .product-card {
+            background: var(--white);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            transition: var(--transition);
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+
+        .product-img {
+            height: 250px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .product-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .product-card:hover .product-img img {
+            transform: scale(1.1);
+        }
+
+        .product-info {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .product-info h3 {
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+        }
+
+        .product-info p {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+
+        /* Why Choose Us */
+        .why-us {
+            background-color: var(--walnut-dark);
+            color: var(--white);
+        }
+
+        .why-us .section-title h2 {
+            color: var(--white);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card {
+            text-align: center;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            transition: var(--transition);
+        }
+
+        .feature-card:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateY(-5px);
+        }
+
+        .feature-card i {
+            font-size: 2.5rem;
+            color: var(--gold);
+            margin-bottom: 20px;
+        }
+
+        /* Process Section */
+        .process {
+            background-color: var(--white);
+        }
+
+        .timeline {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            position: relative;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            top: 40px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: var(--beige);
+            z-index: 1;
+        }
+
+        .timeline-step {
+            flex: 1;
+            min-width: 150px;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .step-number {
+            width: 80px;
+            height: 80px;
+            background: var(--walnut-dark);
+            color: var(--gold);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin: 0 auto 15px;
+            border: 5px solid var(--white);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: var(--transition);
+        }
+
+        .timeline-step:hover .step-number {
+            background: var(--gold);
+            color: var(--white);
+            transform: scale(1.1);
+        }
+
+        /* Gallery */
+        .gallery {
+            background-color: var(--beige);
+        }
+
+        .masonry {
+            column-count: 3;
+            column-gap: 20px;
+        }
+
+        .gallery-item {
+            margin-bottom: 20px;
+            break-inside: avoid;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            transition: var(--transition);
+        }
+
+        .gallery-item::after {
+            content: '\f00e';
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(44, 30, 22, 0.6);
+            color: var(--white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            opacity: 0;
+            transition: var(--transition);
+        }
+
+        .gallery-item:hover::after {
+            opacity: 1;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        /* Reviews */
+        .reviews {
+            background-color: var(--white);
+        }
+        .review-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .review-card {
+            background: var(--beige);
+            padding: 30px;
+            border-radius: 10px;
+            position: relative;
+        }
+        .review-card i.fa-quote-left {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 3rem;
+            color: rgba(197, 160, 89, 0.2);
+        }
+        .stars {
+            color: var(--gold);
+            margin-bottom: 15px;
+        }
+        .review-text {
+            font-style: italic;
+            margin-bottom: 20px;
+            color: var(--text-light);
+        }
+        .reviewer h4 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.1rem;
+        }
+
+        /* Stats */
+        .stats {
+            background: linear-gradient(rgba(44, 30, 22, 0.85), rgba(44, 30, 22, 0.85)), url('https://images.unsplash.com/photo-1540574163026-643ea20ade25?auto=format&fit=crop&w=1920&q=80') fixed center/cover;
+            color: var(--white);
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        .stat-item h3 {
+            font-size: 3.5rem;
+            color: var(--gold);
+            margin-bottom: 10px;
+        }
+        .stat-item p {
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+        }
+
+        /* Contact Section */
+        .contact {
+            background-color: var(--beige);
+            display: flex;
+            gap: 50px;
+        }
+        .contact-map {
+            flex: 1;
+            border-radius: 10px;
+            overflow: hidden;
+            min-height: 400px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            background: url('https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=800&q=80') center/cover;
+            position: relative;
+        }
+        .contact-map::after {
+            content: 'Map Placeholder (Aligarh)';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: var(--white);
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: 600;
+        }
+        .contact-form {
+            flex: 1;
+            background: var(--white);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group input, .form-group textarea, .form-group select {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-family: 'Poppins', sans-serif;
+            outline: none;
+            transition: var(--transition);
+        }
+        .form-group input:focus, .form-group textarea:focus, .form-group select:focus {
+            border-color: var(--gold);
+        }
+        
+        /* CTA */
+        .cta {
+            background-color: var(--walnut-dark);
+            text-align: center;
+            color: var(--white);
+        }
+        .cta h2 {
+            color: var(--white);
+            font-size: 3rem;
+            margin-bottom: 30px;
+        }
+        .cta-btns {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--walnut-dark);
+            color: var(--white);
+            padding: 60px 5% 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        .footer-col h4 {
+            color: var(--gold);
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+            font-family: 'Poppins', sans-serif;
+        }
+        .footer-col ul {
+            list-style: none;
+        }
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+        .footer-col ul li a {
+            color: var(--text-light);
+            transition: var(--transition);
+        }
+        .footer-col ul li a:hover {
+            color: var(--gold);
+        }
+        .footer-col p {
+            color: var(--text-light);
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .social-icons a {
+            width: 40px;
+            height: 40px;
+            background: rgba(255,255,255,0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            transition: var(--transition);
+        }
+        .social-icons a:hover {
+            background: var(--gold);
+        }
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        /* Floating Buttons */
+        .floating-btn {
+            position: fixed;
+            bottom: 20px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: var(--white);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            z-index: 1000;
+            transition: var(--transition);
+        }
+        .whatsapp-btn {
+            right: 20px;
+            background-color: #25D366;
+        }
+        .call-btn {
+            right: 80px;
+            background-color: var(--gold);
+        }
+        .scroll-top {
+            right: 20px;
+            bottom: 80px;
+            background-color: var(--walnut-dark);
+            opacity: 0;
+            visibility: hidden;
+        }
+        .scroll-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+        .floating-btn:hover {
+            transform: scale(1.1);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .hero-content h1 { font-size: 3rem; }
+            .about, .contact { flex-direction: column; }
+            .timeline::before { display: none; }
+            .timeline { flex-direction: column; align-items: center; }
+            .timeline-step { margin-bottom: 30px; width: 100%; }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                position: fixed;
+                top: 70px;
+                right: -100%;
+                width: 250px;
+                height: 100vh;
+                background: var(--walnut-dark);
+                flex-direction: column;
+                padding: 40px 20px;
+                transition: var(--transition);
+            }
+            .nav-links.active { right: 0; }
+            .menu-toggle { display: block; }
+            .masonry { column-count: 2; }
+            .hero-btns, .cta-btns { flex-direction: column; }
+            .trust-badges { flex-direction: column; align-items: center; }
+        }
+
+        @media (max-width: 480px) {
+            .masonry { column-count: 1; }
+            .hero-content h1 { font-size: 2.5rem; }
+            .section-title h2 { font-size: 2rem; }
+            .stat-item h3 { font-size: 2.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header id="header">
+        <a href="#" class="logo">
+            ANTIQUE WOODS
+            <span>Custom Furniture Manufacturer</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#collection">Collection</a></li>
+            <li><a href="#process">Process</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+            <h1>Crafting Timeless Wooden Furniture</h1>
+            <p>Premium Custom Furniture Manufacturer in Aligarh</p>
+            <div class="hero-btns">
+                <a href="#collection" class="btn btn-primary">Explore Collection</a>
+                <a href="#contact" class="btn btn-outline">Contact Us</a>
+            </div>
+            <div class="trust-badges" data-aos="fade-up" data-aos-delay="300">
+                <div class="badge"><i class="fas fa-check-circle"></i> Premium Quality</div>
+                <div class="badge"><i class="fas fa-hammer"></i> Custom Furniture</div>
+                <div class="badge"><i class="fas fa-tags"></i> Affordable Pricing</div>
+                <div class="badge"><i class="fas fa-award"></i> Handcrafted Excellence</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-img" data-aos="fade-right">
+            <img src="https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=800&q=80" alt="Carpentry Workshop" loading="lazy">
+        </div>
+        <div class="about-content" data-aos="fade-left">
+            <div class="section-title" style="text-align: left;">
+                <h2>About Antique Woods</h2>
+                <p>Aligarh's Most Trusted Furniture Manufacturer</p>
+            </div>
+            <p>Antique Woods is a trusted furniture manufacturer in Aligarh specializing in custom-made wooden furniture crafted with precision, premium materials, and timeless designs. From luxury sofas to modular wardrobes, every piece is built according to customer requirements while maintaining transparency, quality, and affordability.</p>
+            <ul class="highlights">
+                <li><i class="fas fa-check"></i> Customized Furniture</li>
+                <li><i class="fas fa-check"></i> Premium Wood</li>
+                <li><i class="fas fa-check"></i> Skilled Craftsmen</li>
+                <li><i class="fas fa-check"></i> Affordable Pricing</li>
+                <li><i class="fas fa-check"></i> Transparent Process</li>
+                <li><i class="fas fa-check"></i> Excellent Support</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Collection Section -->
+    <section id="collection" class="collection">
+        <div class="section-title" data-aos="fade-up">
+            <h2>Our Furniture Collection</h2>
+            <p>Discover our range of meticulously crafted wooden masterpieces.</p>
+        </div>
+        <div class="grid-container">
+            <!-- Product 1 -->
+            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=600&q=80" alt="Luxury Sofa" loading="lazy">
+                </div>
+                <div class="product-info">
+                    <h3>Luxury Sofas</h3>
+                    <p>Custom-built modern and classic sofas for unparalleled comfort.</p>
+                    <a href="#contact" class="btn btn-primary" style="padding: 8px 20px; font-size: 0.8rem;">Enquire Now</a>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="product-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1505693314120-0d443867891c?auto=format&fit=crop&w=600&q=80" alt="Wooden Bed" loading="lazy">
+                </div>
+                <div class="product-info">
+                    <h3>Wooden Beds</h3>
+                    <p>Sturdy, elegant, and timeless wooden bed frames.</p>
+                    <a href="#contact" class="btn btn-primary" style="padding: 8px 20px; font-size: 0.8rem;">Enquire Now</a>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="product-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="product-img">
+                    <img src="https://static.wixstatic.com/media/648254_56d464f3e83e4f6ab5d0242cd7ee82ed~mv2.jpg" alt="Dining Table" loading="lazy">
+                </div>
+                <div class="product-info">
+                    <h3>Dining Tables</h3>
+                    <p>Premium wooden dining sets for memorable family meals.</p>
+                    <a href="#contact" class="btn btn-primary" style="padding: 8px 20px; font-size: 0.8rem;">Enquire Now</a>
+                </div>
+            </div>
+            <!-- Product 4 -->
+            <div class="product-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1595515106969-1ce29566ff1c?auto=format&fit=crop&w=600&q=80" alt="Wardrobe" loading="lazy">
+                </div>
+                <div class="product-info">
+                    <h3>Wardrobes</h3>
+                    <p>Spacious, modular, and custom-designed wooden wardrobes.</p>
+                    <a href="#contact" class="btn btn-primary" style="padding: 8px 20px; font-size: 0.8rem;">Enquire Now</a>
+                </div>
+            </div>
+            <!-- Product 5 -->
+            <div class="product-card" data-aos="fade-up" data-aos-delay="500">
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=600&q=80" alt="Office Furniture" loading="lazy">
+                </div>
+                <div class="product-info">
+                    <h3>Office Furniture</h3>
+                    <p>Ergonomic and professional wooden desks and cabinets.</p>
+                    <a href="#contact" class="btn btn-primary" style="padding: 8px 20px; font-size: 0.8rem;">Enquire Now</a>
+                </div>
+            </div>
+            <!-- Product 6 -->
+            <div class="product-card" data-aos="fade-up" data-aos-delay="600">
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&w=600&q=80" alt="TV Unit" loading="lazy">
+                </div>
+                <div class="product-info">
+                    <h3>TV Units</h3>
+                    <p>Modern wooden entertainment units for your living space.</p>
+                    <a href="#contact" class="btn btn-primary" style="padding: 8px 20px; font-size: 0.8rem;">Enquire Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-us">
+        <div class="section-title" data-aos="fade-up">
+            <h2>Why Choose Antique Woods</h2>
+            <p>Our commitment to excellence sets us apart.</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card" data-aos="zoom-in" data-aos-delay="100">
+                <i class="fas fa-pencil-ruler"></i>
+                <h3>Custom Requirement</h3>
+                <p>Furniture designed exactly to match your space and taste.</p>
+            </div>
+            <div class="feature-card" data-aos="zoom-in" data-aos-delay="200">
+                <i class="fas fa-tree"></i>
+                <h3>Best Quality</h3>
+                <p>We source only premium grade wood and materials.</p>
+            </div>
+            <div class="feature-card" data-aos="zoom-in" data-aos-delay="300">
+                <i class="fas fa-users"></i>
+                <h3>Experienced Team</h3>
+                <p>Master craftsmen with decades of woodworking experience.</p>
+            </div>
+            <div class="feature-card" data-aos="zoom-in" data-aos-delay="400">
+                <i class="fas fa-rupee-sign"></i>
+                <h3>Transparent Pricing</h3>
+                <p>Affordable rates with absolutely no hidden charges.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="process">
+        <div class="section-title" data-aos="fade-up">
+            <h2>Custom Furniture Process</h2>
+            <p>How we bring your dream furniture to life.</p>
+        </div>
+        <div class="timeline">
+            <div class="timeline-step" data-aos="fade-up" data-aos-delay="100">
+                <div class="step-number">1</div>
+                <h4>Consultation</h4>
+                <p style="font-size: 0.9rem; color: var(--text-light);">Understanding your needs</p>
+            </div>
+            <div class="timeline-step" data-aos="fade-up" data-aos-delay="200">
+                <div class="step-number">2</div>
+                <h4>Design</h4>
+                <p style="font-size: 0.9rem; color: var(--text-light);">Creating blueprints & 3D</p>
+            </div>
+            <div class="timeline-step" data-aos="fade-up" data-aos-delay="300">
+                <div class="step-number">3</div>
+                <h4>Materials</h4>
+                <p style="font-size: 0.9rem; color: var(--text-light);">Selecting premium wood</p>
+            </div>
+            <div class="timeline-step" data-aos="fade-up" data-aos-delay="400">
+                <div class="step-number">4</div>
+                <h4>Manufacturing</h4>
+                <p style="font-size: 0.9rem; color: var(--text-light);">Crafting with precision</p>
+            </div>
+            <div class="timeline-step" data-aos="fade-up" data-aos-delay="500">
+                <div class="step-number">5</div>
+                <h4>Quality Check</h4>
+                <p style="font-size: 0.9rem; color: var(--text-light);">Ensuring perfection</p>
+            </div>
+            <div class="timeline-step" data-aos="fade-up" data-aos-delay="600">
+                <div class="step-number">6</div>
+                <h4>Delivery</h4>
+                <p style="font-size: 0.9rem; color: var(--text-light);">Safe transport & installation</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="section-title" data-aos="fade-up">
+            <h2>Featured Gallery</h2>
+            <p>A glimpse into our recent handcrafted projects.</p>
+        </div>
+        <div class="masonry">
+            <div class="gallery-item" data-aos="fade-up"><img src="https://images.unsplash.com/photo-1540574163026-643ea20ade25?auto=format&fit=crop&w=600&q=80" alt="Furniture 1" loading="lazy"></div>
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="100"><img src="https://images.unsplash.com/photo-1550226891-ef816aed4a98?auto=format&fit=crop&w=600&q=80" alt="Furniture 2" loading="lazy"></div>
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="200"><img src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&w=600&q=80" alt="Furniture 3" loading="lazy"></div>
+            <div class="gallery-item" data-aos="fade-up"><img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=600&q=80" alt="Furniture 4" loading="lazy"></div>
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="100"><img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=600&q=80" alt="Furniture 5" loading="lazy"></div>
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="200"><img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=600&q=80" alt="Furniture 6" loading="lazy"></div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews">
+        <div class="section-title" data-aos="fade-up">
+            <h2>Customer Reviews</h2>
+            <p>Rated ⭐ 4.8/5 by our valuable clients in Aligarh.</p>
+        </div>
+        <div class="review-grid">
+            <div class="review-card" data-aos="fade-up" data-aos-delay="100">
+                <i class="fas fa-quote-left"></i>
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p class="review-text">"Sofa was made exactly as per our requirement. Transparency from Owner Mr. Ankit Agarwal is the biggest USP. Huge variety of furniture available."</p>
+                <div class="reviewer">
+                    <h4>— Renu Agarwal</h4>
+                </div>
+            </div>
+            <div class="review-card" data-aos="fade-up" data-aos-delay="200">
+                <i class="fas fa-quote-left"></i>
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p class="review-text">"Best quality furniture with reasonable pricing. Excellent customer care and dedicated team. Totally satisfied with the wooden dining table."</p>
+                <div class="reviewer">
+                    <h4>— Amit Gupta</h4>
+                </div>
+            </div>
+            <div class="review-card" data-aos="fade-up" data-aos-delay="300">
+                <i class="fas fa-quote-left"></i>
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p class="review-text">"Affordable furniture with great quality. Highly recommended in Aligarh for customized modular kitchens and wardrobes."</p>
+                <div class="reviewer">
+                    <h4>— Local Customer</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="stat-item" data-aos="zoom-in">
+            <h3 class="counter" data-target="4.8">0</h3>
+            <p>Customer Rating</p>
+        </div>
+        <div class="stat-item" data-aos="zoom-in" data-aos-delay="100">
+            <h3><span class="counter" data-target="1000">0</span>+</h3>
+            <p>Furniture Delivered</p>
+        </div>
+        <div class="stat-item" data-aos="zoom-in" data-aos-delay="200">
+            <h3><span class="counter" data-target="500">0</span>+</h3>
+            <p>Happy Customers</p>
+        </div>
+        <div class="stat-item" data-aos="zoom-in" data-aos-delay="300">
+            <h3><span class="counter" data-target="100">0</span>+</h3>
+            <p>Custom Projects</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="contact-map" data-aos="fade-right">
+            <!-- In a real scenario, embed a Google Map iframe here -->
+        </div>
+        <div class="contact-form" data-aos="fade-left">
+            <div class="section-title" style="text-align: left; margin-bottom: 30px;">
+                <h2>Get a Free Quote</h2>
+                <p>Discuss your furniture requirements with us.</p>
+            </div>
+            <form id="inquiryForm">
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" placeholder="Phone Number" required>
+                </div>
+                <div class="form-group">
+                    <select required>
+                        <option value="" disabled selected>Select Furniture Requirement</option>
+                        <option value="sofa">Luxury Sofa</option>
+                        <option value="bed">Wooden Bed</option>
+                        <option value="dining">Dining Table</option>
+                        <option value="wardrobe">Wardrobe / Modular</option>
+                        <option value="office">Office Furniture</option>
+                        <option value="other">Other / Custom Setup</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <textarea rows="4" placeholder="Your Message / Details" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Inquiry</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" data-aos="fade-up">
+        <h2>Let's Build Your Dream Furniture</h2>
+        <div class="cta-btns">
+            <a href="tel:+919258892193" class="btn btn-primary"><i class="fas fa-phone-alt"></i> Call Now: +91 92588 92193</a>
+            <a href="https://wa.me/919258892193" class="btn btn-outline"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <a href="#" class="logo" style="margin-bottom: 20px;">
+                    ANTIQUE WOODS
+                    <span>(एंटीक वुड्स)</span>
+                </a>
+                <p>Premium Custom Furniture Manufacturer in Aligarh. Crafting timeless pieces for your home and office.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#collection">Our Collection</a></li>
+                    <li><a href="#process">How It Works</a></li>
+                    <li><a href="#gallery">Project Gallery</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Furniture Categories</h4>
+                <ul>
+                    <li><a href="#collection">Luxury Sofas</a></li>
+                    <li><a href="#collection">Wooden Beds</a></li>
+                    <li><a href="#collection">Dining Tables</a></li>
+                    <li><a href="#collection">Modular Kitchens & Wardrobes</a></li>
+                    <li><a href="#collection">Office Furniture</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <p><i class="fas fa-map-marker-alt" style="color:var(--gold);"></i> 8/15, Laxmi Puri Rd, Sarai Hakeem, Sarai Babu, Aligarh, UP 202001</p>
+                <p><i class="fas fa-phone-alt" style="color:var(--gold);"></i> +91 92588 92193</p>
+                <p><i class="fas fa-clock" style="color:var(--gold);"></i> Opens: 11:00 AM (Wednesday - Monday)</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Antique Woods. All Rights Reserved. Designed for Premium Comfort.</p>
+        </div>
+    </footer>
+
+    <!-- Floating Buttons -->
+    <a href="https://wa.me/919258892193" target="_blank" class="floating-btn whatsapp-btn"><i class="fab fa-whatsapp"></i></a>
+    <a href="tel:+919258892193" class="floating-btn call-btn"><i class="fas fa-phone-alt"></i></a>
+    <a href="#" class="floating-btn scroll-top" id="scrollTop"><i class="fas fa-chevron-up"></i></a>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS Animation
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+
+        // Sticky Navbar & Scroll-to-top Button
+        const header = document.getElementById('header');
+        const scrollTopBtn = document.getElementById('scrollTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+
+            if (window.scrollY > 500) {
+                scrollTopBtn.classList.add('visible');
+            } else {
+                scrollTopBtn.classList.remove('visible');
+            }
+        });
+
+        // Mobile Menu Toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // Animated Counters
+        const counters = document.querySelectorAll('.counter');
+        let hasCounted = false;
+
+        const countUp = () => {
+            counters.forEach(counter => {
+                const target = +counter.getAttribute('data-target');
+                const count = +counter.innerText;
+                const increment = target / 50;
+
+                if (count < target) {
+                    // For the 4.8 rating, keep 1 decimal place
+                    if(target === 4.8) {
+                        counter.innerText = (count + increment).toFixed(1);
+                    } else {
+                        counter.innerText = Math.ceil(count + increment);
+                    }
+                    setTimeout(countUp, 40);
+                } else {
+                    counter.innerText = target;
+                }
+            });
+        };
+
+        // Trigger counter animation on scroll
+        window.addEventListener('scroll', () => {
+            const statsSection = document.querySelector('.stats');
+            const sectionPos = statsSection.getBoundingClientRect().top;
+            const screenPos = window.innerHeight;
+
+            if (sectionPos < screenPos && !hasCounted) {
+                countUp();
+                hasCounted = true;
+            }
+        });
+
+        // Form Submission (Prevent Default for Demo)
+        document.getElementById('inquiryForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your inquiry! The team at Antique Woods will contact you shortly.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
